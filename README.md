@@ -100,18 +100,18 @@ Opis programu macierz
 
 Program macierz ma ze standardowego wejścia wczytywać dwie liczby k oraz n, każda w osobnym wierszu. Liczby te oznaczają odpowiednio liczbę wierszy oraz kolumn macierzy. Następnie program ma wczytać k*n linijek z danymi, z których każda zawiera dwie, oddzielone spacją liczby: v, t. Liczba v umieszczona w linijce i (numerację linijek zaczynamy od 0) określa wartość macierzy z wiersza floor(i/n) (numerację kolumn i wierszy zaczynamy od 0) oraz kolumny i mod n. Liczba t to liczba milisekund, jakie są potrzebne do obliczenia wartości v. Oto przykładowe poprawne dane wejściowe:
 
-2
-3
-1 2
-1 5
-12 4
-23 9
-3 11
+2/
+3/
+1 2/
+1 5/
+12 4/
+23 9/
+3 11/
 7 2
 
 Takie dane wejściowe tworzą macierz od dwóch wierszach i trzech kolumnach:
 
-|  1  1 12 |
+|  1  1 12 |/
 | 23  3  7 |
 
 Program ma za zadanie wczytać tak sformatowane wejście (można zakładać, że podawane będą tylko poprawne dane), a następnie za pomocą systemu aktorów z liczbą aktorów równą liczbie kolumn policzyć sumy wierszy. Każdy aktor będzie opiekował się obliczaniem wartości komórek z przypisanej mu kolumny. Po otrzymaniu komunikatu z numerem wiersza oraz dotychczas obliczoną sumą tego wiersza powinien odczekać liczbę milisekund, które zostały wczytane jako potrzebne do obliczenia wartości w komórce wyznaczonej przez numer wiersza z komunikatu i numer kolumny, którą opiekuje się aktor (np. zadanie obliczeniowe wyliczenia wartości 3 z macierzy powyżej powinno odczekiwać 11 milisekund). Następnie zaś wyliczyć nową sumę przez dodanie wartości z tej komórki do dotychczas obliczonej sumy, a potem przesłać do aktora opiekującego się następną kolumną komunikat z otrzymanym numerem wiersza i nową sumą. Po obliczeniu należy wypisać sumy kolejnych wierszy na standardowe wyjście, po jednej sumie w wierszu. Dla przykładowej macierzy powyżej umieszczonej w pliku data1.dat wywołanie:
@@ -120,7 +120,7 @@ $ cat data1.dat | ./macierz
 
 powinno spowodować pojawienie się na wyjściu
 
-14
+14/
 33
 
 Opis programu silnia
